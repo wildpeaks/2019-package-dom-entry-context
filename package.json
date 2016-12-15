@@ -1,0 +1,29 @@
+{
+  "name": "@wildpeaks/dom-entry-context",
+  "version": "1.1.0",
+  "description": "DOM Entry Context",
+  "main": "src/getContext.js",
+  "files": [
+    "src/getContext.js",
+    "test/getContext.tests.js"
+  ],
+  "scripts": {
+    "test": "mocha -r jsdom-global/register test/*.js"
+  },
+  "repository": "https://github.com/wildpeaks/package-dom-entry-context",
+  "keywords": [
+    "wildpeaks",
+    "dom"
+  ],
+  "author": "Cecile Muller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildpeaks/package-dom-entry-context/issues"
+  },
+  "homepage": "https://github.com/wildpeaks/package-dom-entry-context#readme",
+  "devDependencies": {
+    "jsdom": "^9.8.3",
+    "jsdom-global": "^2.1.0",
+    "mocha": "^3.2.0"
+  }
+}
