@@ -17,9 +17,7 @@ module.exports = id => {
 			} catch (e){
 				data = null;
 			}
-			if (data !== null){
-				context = {element, data};
-			}
+			context = (data === null) ? {element} : {element, data};
 		}
 	}
 	return context;

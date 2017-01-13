@@ -52,43 +52,67 @@ function assert_invalid_id_number_1(){
 function assert_valid_id(){
 	document.body.innerHTML = `<div id="mycontainer" data-context="123"></div>`;
 	const context = getContext('mycontainer');
-	strictEqual(typeof context, 'object');
-	strictEqual(typeof context.element, 'object');
-	strictEqual(context.data, 123);
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(context.data, 123, 'context.data');
 }
 
 function assert_missing_data(){
 	document.body.innerHTML = `<div id="mycontainer"></div>`;
-	strictEqual(getContext('mycontainer'), false);
+	const context = getContext('mycontainer');
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(typeof context.data, 'undefined', 'context.data');
 }
 function assert_invalid_data_empty(){
 	document.body.innerHTML = `<div id="mycontainer" data-context=""></div>`;
-	strictEqual(getContext('mycontainer'), false);
+	const context = getContext('mycontainer');
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(typeof context.data, 'undefined', 'context.data');
+}
+function assert_invalid_data_null(){
+	document.body.innerHTML = `<div id="mycontainer" data-context="null"></div>`;
+	const context = getContext('mycontainer');
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(typeof context.data, 'undefined', 'context.data');
+}
+function assert_invalid_data_undefined(){
+	document.body.innerHTML = `<div id="mycontainer" data-context="undefined"></div>`;
+	const context = getContext('mycontainer');
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(typeof context.data, 'undefined', 'context.data');
 }
 function assert_invalid_data_not_json(){
 	document.body.innerHTML = `<div id="mycontainer" data-context="NOT JSON"></div>`;
-	strictEqual(getContext('mycontainer'), false);
+	const context = getContext('mycontainer');
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(typeof context.data, 'undefined', 'context.data');
 }
+
 function assert_valid_data_boolean(){
 	document.body.innerHTML = `<div id="mycontainer" data-context="true"></div>`;
 	const context = getContext('mycontainer');
-	strictEqual(typeof context, 'object');
-	strictEqual(typeof context.element, 'object');
-	strictEqual(context.data, true);
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(context.data, true, 'context.data');
 }
 function assert_valid_data_string(){
 	document.body.innerHTML = `<div id="mycontainer" data-context='"123"'></div>`;
 	const context = getContext('mycontainer');
-	strictEqual(typeof context, 'object');
-	strictEqual(typeof context.element, 'object');
-	strictEqual(context.data, '123');
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	strictEqual(context.data, '123', 'context.data');
 }
 function assert_valid_data_object(){
 	document.body.innerHTML = `<div id="mycontainer" data-context='{"hello": 123}'></div>`;
 	const context = getContext('mycontainer');
-	strictEqual(typeof context, 'object');
-	strictEqual(typeof context.element, 'object');
-	deepStrictEqual(context.data, {hello: 123});
+	strictEqual(typeof context, 'object', 'context is an Object');
+	strictEqual(typeof context.element, 'object', 'context.element');
+	deepStrictEqual(context.data, {hello: 123}, 'context.data');
 }
 
 
@@ -107,7 +131,9 @@ describe('@wildpeaks/dom-entry-context', () => {
 	it('Valid ID', assert_valid_id);
 
 	it('Missing Data', assert_missing_data);
-	it('Invalid Data (empty)', assert_invalid_data_empty);
+	it('Invalid Data ("")', assert_invalid_data_empty);
+	it('Invalid Data ("null")', assert_invalid_data_null);
+	it('Invalid Data ("undefined")', assert_invalid_data_undefined);
 	it('Invalid Data (not JSON)', assert_invalid_data_not_json);
 	it('Valid Data (JSON Boolean)', assert_valid_data_boolean);
 	it('Valid Data (JSON String)', assert_valid_data_string);
