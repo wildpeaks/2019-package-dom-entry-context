@@ -7,8 +7,13 @@
     "src/getContext.js",
     "test/getContext.tests.js"
   ],
+  "eslintConfig": {
+    "extends": "@wildpeaks/commonjs"
+  },
   "scripts": {
-    "test": "mocha -r jsdom-global/register test/*.js"
+    "test:eslint": "eslint src",
+    "test:mocha": "mocha -r jsdom-global/register test/*.js",
+    "test": "npm run test:eslint && npm run test:mocha"
   },
   "repository": "https://github.com/wildpeaks/package-dom-entry-context",
   "keywords": [
@@ -22,8 +27,10 @@
   },
   "homepage": "https://github.com/wildpeaks/package-dom-entry-context#readme",
   "devDependencies": {
+    "eslint": "3.14.1",
     "jsdom": "^9.8.3",
     "jsdom-global": "^2.1.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "@wildpeaks/eslint-config-commonjs": "1.1.0"
   }
 }
