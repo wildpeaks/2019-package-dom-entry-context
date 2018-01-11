@@ -1,19 +1,17 @@
 {
   "name": "@wildpeaks/dom-entry-context",
-  "version": "2.0.0",
-  "description": "DOM Entry Context",
-  "main": "src/getContext.js",
+  "version": "3.0.0",
+  "description": "Read JSON-encoded data from an HTMLElement attribute",
+  "main": "src/getContext.ts",
+  "types": "src/getContext.ts",
   "files": [
-    "src/getContext.js",
-    "test/getContext.tests.js"
+    "src"
   ],
   "eslintConfig": {
-    "extends": "@wildpeaks/commonjs"
+    "extends": "@wildpeaks/typescript"
   },
   "scripts": {
-    "test:eslint": "eslint src",
-    "test:mocha": "mocha -r jsdom-global/register test/*.js",
-    "test": "npm run test:eslint && npm run test:mocha"
+    "test": "jasmine --helper=jasmine.typescript.js test/*.spec.ts"
   },
   "repository": "https://github.com/wildpeaks/package-dom-entry-context",
   "keywords": [
@@ -26,11 +24,17 @@
     "url": "https://github.com/wildpeaks/package-dom-entry-context/issues"
   },
   "homepage": "https://github.com/wildpeaks/package-dom-entry-context#readme",
+  "peerDependencies": {
+    "typescript": "*"
+  },
   "devDependencies": {
-    "eslint": "3.14.1",
-    "jsdom": "^9.8.3",
-    "jsdom-global": "^2.1.0",
-    "mocha": "^3.2.0",
-    "@wildpeaks/eslint-config-commonjs": "1.1.0"
+    "@types/jasmine": "2.8.3",
+    "@types/node": "8.5.7",
+    "@wildpeaks/eslint-config-typescript": "4.3.0",
+    "eslint": "4.15.0",
+    "jasmine": "2.8.0",
+    "jsdom": "11.5.1",
+    "ts-node": "4.1.0",
+    "typescript": "2.6.2"
   }
 }
