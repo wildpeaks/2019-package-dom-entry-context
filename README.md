@@ -1,6 +1,6 @@
 # DOM Entry Context
 
-[![Build Status](https://travis-ci.org/wildpeaks/package-dom-entry-context.svg?branch=master)](https://travis-ci.org/wildpeaks/package-dom-entry-context) [![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/package-dom-entry-context.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/package-dom-entry-context.svg)](https://greenkeeper.io/)
 
 Typescript function to **read JSON-encoded data from an HTMLElement attribute**.
 
