@@ -31,7 +31,7 @@
     "@types/jasmine": "3.4.6",
     "@types/node": "12.12.10",
     "@wildpeaks/eslint-config-typescript": "7.2.0",
-    "eslint": "6.6.0",
+    "eslint": "6.7.0",
     "jasmine": "3.5.0",
     "jsdom": "15.2.1",
     "ts-node": "8.5.2",
