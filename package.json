@@ -10,6 +10,12 @@
   "eslintConfig": {
     "extends": "@wildpeaks/typescript"
   },
+  "greenkeeper": {
+    "commitMessages": {
+      "dependencyUpdate": "fix: Update ${dependency}",
+      "devDependencyUpdate": "chore: Update ${dependency}"
+    }
+  },
   "scripts": {
     "test": "jasmine --helper=jasmine.typescript.js test/*.spec.ts"
   },
