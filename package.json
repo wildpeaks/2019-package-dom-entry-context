@@ -35,6 +35,6 @@
     "jasmine": "3.5.0",
     "jsdom": "15.2.1",
     "ts-node": "8.5.4",
-    "typescript": "3.6.4"
+    "typescript": "3.7.2"
   }
 }
