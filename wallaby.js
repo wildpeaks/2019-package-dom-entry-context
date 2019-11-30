@@ -2,7 +2,7 @@
 
 module.exports = () => ({
 	debug: true,
-	testFramework: 'jasmine',
+	testFramework: 'mocha',
 	files: [
 		'src/**/*.ts'
 	],

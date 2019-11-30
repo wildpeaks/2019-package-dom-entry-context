@@ -17,12 +17,12 @@
 !/.gitattributes
 !/.gitignore
 !/.npmrc
-!/.travis.yml
+!/.github
 !/.vscode
 !/azure-pipelines.yml
 !/src
 !/test
-!/jasmine.typescript.js
+!/register.typescript.js
 !/tsconfig.json
 !/package.json
 !/wallaby.js

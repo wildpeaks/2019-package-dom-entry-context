@@ -10,8 +10,14 @@
   "eslintConfig": {
     "extends": "@wildpeaks/typescript"
   },
+  "greenkeeper": {
+    "commitMessages": {
+      "dependencyUpdate": "fix: Update ${dependency}",
+      "devDependencyUpdate": "chore: Update ${dependency}"
+    }
+  },
   "scripts": {
-    "test": "jasmine --helper=jasmine.typescript.js test/*.spec.ts"
+    "test": "mocha -r register.typescript.js test/*.spec.ts"
   },
   "repository": "https://github.com/wildpeaks/package-dom-entry-context",
   "keywords": [
@@ -28,13 +34,14 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "@types/jasmine": "3.4.6",
-    "@types/node": "12.12.10",
+    "@types/mocha": "5.2.7",
+    "@types/node": "12.12.14",
     "@wildpeaks/eslint-config-typescript": "7.2.0",
-    "eslint": "6.6.0",
-    "jasmine": "3.5.0",
+    "@wildpeaks/tsconfig-node": "1.0.0",
+    "eslint": "6.7.1",
     "jsdom": "15.2.1",
-    "ts-node": "8.5.2",
-    "typescript": "3.6.4"
+    "mocha": "6.2.2",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.2"
   }
 }
