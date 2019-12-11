@@ -35,13 +35,13 @@
   },
   "devDependencies": {
     "@types/mocha": "5.2.7",
-    "@types/node": "12.12.14",
-    "@wildpeaks/eslint-config-typescript": "7.2.0",
+    "@types/node": "12.12.17",
+    "@wildpeaks/eslint-config-typescript": "7.3.0",
     "@wildpeaks/tsconfig-node": "1.1.0",
     "eslint": "6.7.2",
     "jsdom": "15.2.1",
     "mocha": "6.2.2",
     "ts-node": "8.5.4",
-    "typescript": "3.7.2"
+    "typescript": "3.7.3"
   }
 }
