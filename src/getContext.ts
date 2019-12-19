@@ -1,6 +1,4 @@
 /* eslint-env browser */
-/* eslint-disable indent */
-
 export type Context = {
 	element: HTMLElement;
 	data?: any;
@@ -11,20 +9,20 @@ export type Context = {
  * @param  elementId  Unique ID of the HTMLElement
  * @param  propertyId  Property of element to read from
  */
-export function getContext(elementId: string, propertyId: string = 'data-context'): Context | undefined {
+export function getContext(elementId: string, propertyId: string = "data-context"): Context | undefined {
 	let context;
 	const element = document.getElementById(elementId);
-	if (element){
+	if (element) {
 		let data;
 		try {
 			const raw = element.getAttribute(propertyId);
-			if (raw !== null){
+			if (raw !== null) {
 				data = JSON.parse(raw);
 			}
-		} catch (e){
+		} catch (e) {
 			data = null;
 		}
-		context = (data === null) ? {element} : {element, data};
+		context = data === null ? {element} : {element, data};
 	}
 	return context;
 }
