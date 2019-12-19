@@ -1,6 +1,7 @@
 {
 	"extends": "@wildpeaks/tsconfig-node",
 	"compilerOptions": {
-		"lib": ["es2017", "dom"]
+		"lib": ["es2017", "dom"],
+		"types": ["@types/node", "@types/mocha"]
 	}
 }
