@@ -42,8 +42,8 @@
   "devDependencies": {
     "@types/mocha": "5.2.7",
     "@types/node": "12.12.21",
-    "@wildpeaks/eslint-config-typescript": "7.3.0",
-    "@wildpeaks/tsconfig-node": "1.1.0",
+    "@wildpeaks/eslint-config-typescript": "8.0.0-alpha8",
+    "@wildpeaks/tsconfig-node": "2.0.0-alpha2",
     "eslint": "6.7.2",
     "jsdom": "15.2.1",
     "mocha": "6.2.2",
