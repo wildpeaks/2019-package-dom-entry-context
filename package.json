@@ -1,35 +1,41 @@
 {
   "name": "@wildpeaks/dom-entry-context",
   "version": "3.1.0",
+  "author": "Cecile Muller",
+  "license": "MIT",
   "description": "Read JSON-encoded data from an HTMLElement attribute",
+  "keywords": [
+    "wildpeaks",
+    "dom"
+  ],
+  "homepage": "https://github.com/wildpeaks/package-dom-entry-context#readme",
+  "repository": "https://github.com/wildpeaks/package-dom-entry-context",
+  "bugs": {
+    "url": "https://github.com/wildpeaks/package-dom-entry-context/issues"
+  },
+  "eslintConfig": {
+    "extends": "@wildpeaks/typescript"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "useTabs": true,
+    "bracketSpacing": false
+  },
+  "greenkeeper": {
+    "commitMessages": {
+      "dependencyUpdate": "feat: update ${dependency}",
+      "devDependencyUpdate": "chore: update ${dependency}"
+    }
+  },
   "main": "src/getContext.ts",
   "types": "src/getContext.ts",
   "files": [
     "src"
   ],
-  "eslintConfig": {
-    "extends": "@wildpeaks/typescript"
-  },
-  "greenkeeper": {
-    "commitMessages": {
-      "dependencyUpdate": "fix: Update ${dependency}",
-      "devDependencyUpdate": "chore: Update ${dependency}"
-    }
-  },
   "scripts": {
     "test": "mocha -r register.typescript.js test/*.spec.ts"
   },
-  "repository": "https://github.com/wildpeaks/package-dom-entry-context",
-  "keywords": [
-    "wildpeaks",
-    "dom"
-  ],
-  "author": "Cecile Muller",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wildpeaks/package-dom-entry-context/issues"
-  },
-  "homepage": "https://github.com/wildpeaks/package-dom-entry-context#readme",
   "peerDependencies": {
     "typescript": "*"
   },
@@ -41,6 +47,7 @@
     "eslint": "6.7.2",
     "jsdom": "15.2.1",
     "mocha": "6.2.2",
+    "prettier": "1.19.1",
     "ts-node": "8.5.4",
     "typescript": "3.7.3"
   }
