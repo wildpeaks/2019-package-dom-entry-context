@@ -1,6 +1,6 @@
 {
   "name": "@wildpeaks/dom-entry-context",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "author": "Cecile Muller",
   "license": "MIT",
   "description": "Read JSON-encoded data from an HTMLElement attribute",
