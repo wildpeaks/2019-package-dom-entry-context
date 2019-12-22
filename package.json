@@ -1,9 +1,9 @@
 {
   "name": "@wildpeaks/dom-entry-context",
   "version": "3.2.0",
+  "description": "Read JSON-encoded data from an HTMLElement attribute",
   "author": "Cecile Muller",
   "license": "MIT",
-  "description": "Read JSON-encoded data from an HTMLElement attribute",
   "keywords": [
     "wildpeaks",
     "dom"
@@ -49,6 +49,6 @@
     "mocha": "6.2.2",
     "prettier": "1.19.1",
     "ts-node": "8.5.4",
-    "typescript": "3.7.3"
+    "typescript": "3.7.4"
   }
 }
