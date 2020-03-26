@@ -23,12 +23,6 @@
     "bracketSpacing": false,
     "trailingComma": "none"
   },
-  "greenkeeper": {
-    "commitMessages": {
-      "dependencyUpdate": "feat: update ${dependency}",
-      "devDependencyUpdate": "chore: update ${dependency}"
-    }
-  },
   "main": "src/getContext.ts",
   "types": "src/getContext.ts",
   "files": [
