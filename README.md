@@ -1,6 +1,6 @@
 # DOM Entry Context
 
-
+![Github Release](https://img.shields.io/github/v/release/wildpeaks/package-dom-entry-context.svg?label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=11abfb)
 
 Typescript function to **read JSON-encoded data from an HTMLElement attribute**.
 
