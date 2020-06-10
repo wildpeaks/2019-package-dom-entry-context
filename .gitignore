@@ -10,13 +10,12 @@
 !/.gitignore
 !/.github
 !/.npmrc
+!/.prettierignore
 !/.vscode
 !/src
 !/test
 !/package.json
 !/tsconfig.json
-!/azure-pipelines.yml
-!/wallaby.js
 
 # But make sure to ignore these regardless:
 WAS *
