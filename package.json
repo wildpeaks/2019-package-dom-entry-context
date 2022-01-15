@@ -39,7 +39,7 @@
     "@wildpeaks/eslint-config-typescript": "10.7.0",
     "@wildpeaks/tsconfig-node": "2.11.1",
     "eslint": "7.17.0",
-    "jsdom": "16.4.0",
+    "jsdom": "19.0.0",
     "mocha": "8.2.1",
     "prettier": "2.2.1",
     "ts-node": "9.1.1",
